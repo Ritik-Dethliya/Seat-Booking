@@ -35,7 +35,6 @@ cron.schedule('*/1 * * * *', async() => {
         let albookedseat=(await seatsModule.find())[0]
         albookedseat.bookseats=[]
         albookedseat.save()
-        console.log("you can buy seat now")
     } catch (error) {
         console.log(error)
     }
