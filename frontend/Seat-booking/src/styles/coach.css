@@ -1,9 +1,3 @@
-.conatiner{
-    display: flex;
-    gap:1rem;
-    flex-wrap: wrap;
-    padding: 10px;
-}
 .seats{
     display: flex;
     justify-content: center;
@@ -15,7 +9,6 @@
     
 }
 .coach-conatiner{
-    width: 60%;
     border: 2px solid black;
     border-radius: 3%;
     display: grid;
@@ -26,6 +19,12 @@
 .booked{
     background-color: red;
 }
-.bookseatform{
-   width: 100%;
+input{
+    margin: 10px;
+    border-radius: 10px;
+    padding:5px;
+}
+button{
+    border-radius: 10px;
+    padding:5px;
 }

@@ -7,14 +7,14 @@ function Coach() {
     const [seatToBeBook,setseatToBeBook]=useState(0)
 
     const getBookedSeat=async()=>{
-        let res=await fetch("http://localhost:8000/seats/get-seats")
+        let res=await fetch("https://seat-booking-z5rl.onrender.com/seats/get-seats")
         let data=await res.json()
         console.log(data.seats.bookseats)
         setBookseat(prev=>[...prev,...data.seats.bookseats])
     }
 
     const sendTobackend=async(Bookseats)=>{
-        let res=await fetch("http://localhost:8000/seats/book-seats",{
+        let res=await fetch("https://seat-booking-z5rl.onrender.com/seats/book-seats",{
             method:"Post",
             headers: {
                 "Content-Type": "application/json"
@@ -101,6 +101,12 @@ function Coach() {
     }
     return ( 
         <>
+            <h1 style={
+                {
+                    width:"100%",
+                    textAlign:'center'
+                }
+                }>Book Seats</h1>
             <div className="conatiner">
                 <div className="coach-conatiner">
                     {seats.map((seats,index)=>(
@@ -109,7 +115,12 @@ function Coach() {
                 </div>
 
                 <div className="bookseatform">
-                    <input type="Number" onChange={(e)=>setseatToBeBook(Number(e.target.value))} />
+                    <input type="Number" 
+                        placeholder='Enter Number of Seat'
+                        onChange={
+                            (e)=>setseatToBeBook(Number(e.target.value))
+                            } 
+                    />
                     <button onClick={()=>{
                         console.log(seatToBeBook)
                         bookSeats(seatToBeBook)

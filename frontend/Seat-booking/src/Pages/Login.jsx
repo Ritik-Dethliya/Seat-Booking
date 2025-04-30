@@ -10,7 +10,7 @@ function Login() {
         e.preventDefault()
         //console.log(password,email)
         try {
-            let res= await axios.post("http://localhost:8000/user/login/",
+            let res= await axios.post("https://seat-booking-z5rl.onrender.com/user/login/",
                 {
                     email,password
                 }

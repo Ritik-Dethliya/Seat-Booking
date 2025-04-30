@@ -9,7 +9,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className='app-container'>
       <Routes>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/' element={<Login/>}/>
@@ -17,7 +17,7 @@ function App() {
       </Routes>
       
 
-    </>
+    </div>
   )
 }
 

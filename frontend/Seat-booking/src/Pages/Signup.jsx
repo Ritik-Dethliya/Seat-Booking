@@ -14,7 +14,7 @@ function Signup() {
         e.preventDefault()
         
         try {
-            let res= await axios.post("http://localhost:8000/user/signup",
+            let res= await axios.post("https://seat-booking-z5rl.onrender.com/user/signup",
                 {
                     email,password,name,role
                 }
