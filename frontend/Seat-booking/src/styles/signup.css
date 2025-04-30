@@ -1,0 +1,61 @@
+.Signup {
+    max-width: 450px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+  }
+  
+  .Signup h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  .Signup input,
+  .Signup select {
+    background-color: #9ACBD0;
+    padding: 12px;
+    margin: 10px 0;
+    width: 100%;
+    font-weight: 500;
+    color: #1a1a1a;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(128, 0, 128, 0.15);
+    outline: none;
+  }
+  
+  .Signup input:focus,
+  .Signup select:focus {
+    border-color: #6b46c1;
+    box-shadow: 0 0 6px rgba(107, 70, 193, 0.4);
+  }
+  
+  .Signup select {
+    background-color: #e6f0f1;
+    color: #333;
+    text-align: left;
+  }
+  
+  .Signup button {
+    background-color: #6b46c1;
+    color: #fff;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Signup button:hover {
+    background-color: #553c9a;
+  }
+  

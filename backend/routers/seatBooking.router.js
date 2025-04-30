@@ -1,5 +1,6 @@
 import e from "express";
 import seatsModule from "../modules/seats.module.js";
+import cron from 'node-cron'
 
 const seatRouter=e.Router()
 
@@ -28,4 +29,15 @@ seatRouter.post("/book-seats",async(req,res)=>{
         res.status(500).send({"msg":"Something went wrong"})
     }
 })
+
+cron.schedule('*/1 * * * *', async() => {
+    try {
+        let albookedseat=(await seatsModule.find())[0]
+        albookedseat.bookseats=[]
+        albookedseat.save()
+        console.log("you can buy seat now")
+    } catch (error) {
+        console.log(error)
+    }
+  });
 export default seatRouter

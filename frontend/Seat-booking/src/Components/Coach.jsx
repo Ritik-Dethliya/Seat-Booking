@@ -4,6 +4,7 @@ function Coach() {
     let seatsarray=new Array(80).fill(1)
     const [seats,setseats]=useState(seatsarray)
     const [Bookseat,setBookseat]=useState([])
+    const [seatToBeBook,setseatToBeBook]=useState(0)
 
     const getBookedSeat=async()=>{
         let res=await fetch("http://localhost:8000/seats/get-seats")
@@ -28,18 +29,20 @@ function Coach() {
     useEffect(()=>{
         getBookedSeat()
     },[])
+    
     async function bookSeats(n){
-        if(seattobebook>7)return console.log("cannot book seven seat")
+        if(n>7)return alert("cannot book more that seven seat")
         let rpoint=1,lpoint=1
         let Bookseats=[]
         let found=false
-        while(rpoint<80){
+        while(rpoint<=80){
             if(Bookseat.includes(rpoint)){
                rpoint++
                lpoint=rpoint
            }
-           
+          
            else if((rpoint-lpoint+1)==n){
+            console.log(lpoint,rpoint)
                found=true
                for(let i=lpoint;i<=rpoint;i++){
                 Bookseats.push(i)
@@ -48,8 +51,11 @@ function Coach() {
                break
            }
            else if(rpoint%7==0){
-            rpoint++
-            lpoint=rpoint
+                console.log("rpoint to be %7==0",rpoint)
+                rpoint=rpoint+1
+                lpoint=rpoint
+            
+                //console.log(lpoint,rpoint)
            }
            else{
                rpoint++
@@ -95,18 +101,24 @@ function Coach() {
     }
     return ( 
         <>
-            <div className="coach-conatiner">
-                {seats.map((seats,index)=>(
-                    <div key={index} className={`seats ${Bookseat.includes(index+1)?"booked":""}`}>{index+1}</div>
-                ))}
-            </div>
-            <input type="Number" onChange={(e)=>setseattobebook(Number(e.target.value))} />
-            <button onClick={()=>{
-                console.log(seattobebook)
-                bookSeats(seattobebook)
-            }
+            <div className="conatiner">
+                <div className="coach-conatiner">
+                    {seats.map((seats,index)=>(
+                        <div key={index} className={`seats ${Bookseat.includes(index+1)?"booked":""}`}>{index+1}</div>
+                    ))}
+                </div>
+
+                <div className="bookseatform">
+                    <input type="Number" onChange={(e)=>setseatToBeBook(Number(e.target.value))} />
+                    <button onClick={()=>{
+                        console.log(seatToBeBook)
+                        bookSeats(seatToBeBook)
+                    }
+                        
+                    }>Book seat</button>
+                </div>
                 
-            }>Book seat</button>
+            </div>
         </>
     );
 }
