@@ -65,3 +65,10 @@ cd frontend
 cd Seat-Booking
 npm i 
 npm run dev
+```
+# backend Start
+```bash
+cd Seat-Booking
+cd backend
+npm i
+node server.js
