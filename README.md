@@ -69,7 +69,8 @@ cd frontend
 npm install
 npm run dev
 
-###
+### start Backend
+Open new Terminal
 cd ../backend
 npm install
 node server.js
