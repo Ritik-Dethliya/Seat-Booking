@@ -62,10 +62,11 @@ This app allows users to book multiple seats that are close to each other. It's 
 ├── frontend/ # Frontend (React)
 │ ├── public/ # Static files like index.html
 │ └── src/ # React components and pages
-│ ├── components/ # Reusable UI components (optional)
-│ ├── pages/ # Page components (optional)
-│ └── App.jsx # Main React app file
-│
+│   └── Components/ # Reusable UI components
+│   └── pages/ # Page components (optional)
+│   └── App.jsx # Main React app file
+│ ├──index.html   
+│ ├──package.json
 └── README.md # Project documentation
 ```
 ### Prerequisites
