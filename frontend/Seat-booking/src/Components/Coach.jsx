@@ -101,35 +101,36 @@ function Coach() {
     }
     return ( 
         <>
-            <h1 style={
-                {
-                    width:"100%",
-                    textAlign:'center'
-                }
-                }>Book Seats</h1>
-            <div className="conatiner">
-                <div className="coach-conatiner">
-                    {seats.map((seats,index)=>(
-                        <div key={index} className={`seats ${Bookseat.includes(index+1)?"booked":""}`}>{index+1}</div>
-                    ))}
-                </div>
+           <h1 className="book-seats-title">Book Seats</h1>
 
-                <div className="bookseatform">
-                    <input type="Number" 
-                        placeholder='Enter Number of Seat'
-                        onChange={
-                            (e)=>setseatToBeBook(Number(e.target.value))
-                            } 
-                    />
-                    <button onClick={()=>{
-                        console.log(seatToBeBook)
-                        bookSeats(seatToBeBook)
-                    }
-                        
-                    }>Book seat</button>
+            <div className="container">
+            <div className="coach-container">
+                {seats.map((seat, index) => (
+                <div key={index} className={`seat ${Bookseat.includes(index + 1) ? "booked" : ""}`}>
+                    {index + 1}
                 </div>
-                
+                ))}
             </div>
+
+            <div className="booking-form">
+                <input
+                type="number"
+                placeholder="Enter Number of Seat"
+                onChange={(e) => setseatToBeBook(Number(e.target.value))}
+                className="seat-input"
+                />
+                <button
+                onClick={() => {
+                    console.log(seatToBeBook);
+                    bookSeats(seatToBeBook);
+                }}
+                className="seat-book-button"
+                >
+                Book seat
+                </button>
+            </div>
+            </div>
+
         </>
     );
 }
