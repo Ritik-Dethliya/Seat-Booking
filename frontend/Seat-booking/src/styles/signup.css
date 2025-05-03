@@ -1,6 +1,3 @@
-/* signup.css */
-
-/* Container for the signup form */
 .signup-form {
   max-width: 400px;
   margin: 50px auto;
@@ -10,7 +7,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Title style */
+
 .signup-title {
   font-size: 2rem;
   font-weight: bold;
@@ -19,7 +16,7 @@
   margin-bottom: 20px;
 }
 
-/* Input fields */
+
 .signup-input {
   width: 100%;
   padding: 12px;
@@ -37,7 +34,7 @@
   box-shadow: 0 0 5px rgba(106, 76, 147, 0.5);
 }
 
-/* Select role */
+
 .signup-select {
   width: 100%;
   padding: 12px;
@@ -48,7 +45,7 @@
   background-color: #f0f4f8;
 }
 
-/* Submit button */
+
 .signup-button {
   width: 100%;
   padding: 12px;
