@@ -56,19 +56,20 @@ This app allows users to book multiple seats that are close to each other. It's 
 - Node.js & npm
 - MongoDB
 
-### Clone the Repository
+### 🚀 Clone & Run the Project
+
+#### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Ritik-Dethliya/Seat-Booking.git
 cd Seat-Booking
-cd frontend 
-cd Seat-Booking
-npm i 
+
+## start Frontend
+cd frontend
+npm install
 npm run dev
-```
-# backend Start
-```bash
-cd Seat-Booking
-cd backend
-npm i
+
+###
+cd ../backend
+npm install
 node server.js
