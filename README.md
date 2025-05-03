@@ -52,14 +52,21 @@ This app allows users to book multiple seats that are close to each other. It's 
 ## 🚀 Installation
 
 ### Folder Structure
-├── backend/
-|   ├──# modules
-|   ├──#routers
-|   ├──#db.config.js
-|   ├──#package.json
-├──frontend
-|   ├──#public
-|   ├──#src
+
+├── backend/ # Backend (Node.js + Express)
+│ ├── modules/ # Logic modules (controllers/services)
+│ ├── routers/ # API route handlers
+│ ├── db.config.js # MongoDB connection setup
+│ ├── package.json # Backend dependencies and scripts
+│
+├── frontend/ # Frontend (React)
+│ ├── public/ # Static files like index.html
+│ └── src/ # React components and pages
+│ ├── components/ # Reusable UI components (optional)
+│ ├── pages/ # Page components (optional)
+│ └── App.jsx # Main React app file
+│
+└── README.md # Project documentation
 
 ### Prerequisites
 
