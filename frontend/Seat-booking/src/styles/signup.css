@@ -1,61 +1,67 @@
-.Signup {
-    max-width: 450px;
-    margin: 60px auto;
-    padding: 30px;
-    background-color: #f4f4f4;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-family: sans-serif;
-  }
-  
-  .Signup h1 {
-    text-align: center;
-    font-size: 26px;
-    margin-bottom: 25px;
-    color: #333;
-  }
-  
-  .Signup input,
-  .Signup select {
-    background-color: #9ACBD0;
-    padding: 12px;
-    margin: 10px 0;
-    width: 100%;
-    font-weight: 500;
-    color: #1a1a1a;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(128, 0, 128, 0.15);
-    outline: none;
-  }
-  
-  .Signup input:focus,
-  .Signup select:focus {
-    border-color: #6b46c1;
-    box-shadow: 0 0 6px rgba(107, 70, 193, 0.4);
-  }
-  
-  .Signup select {
-    background-color: #e6f0f1;
-    color: #333;
-    text-align: left;
-  }
-  
-  .Signup button {
-    background-color: #6b46c1;
-    color: #fff;
-    padding: 12px 20px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 8px;
-    width: 100%;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .Signup button:hover {
-    background-color: #553c9a;
-  }
-  
+/* signup.css */
+
+/* Container for the signup form */
+.signup-form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title style */
+.signup-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #6a4c93;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.signup-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #f0f4f8;
+}
+
+.signup-input:focus {
+  outline: none;
+  border-color: #6a4c93;
+  box-shadow: 0 0 5px rgba(106, 76, 147, 0.5);
+}
+
+/* Select role */
+.signup-select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f0f4f8;
+}
+
+/* Submit button */
+.signup-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6a4c93;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #5b3d80;
+}

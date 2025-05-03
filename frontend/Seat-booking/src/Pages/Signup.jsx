@@ -34,20 +34,44 @@ function Signup() {
     }
     return ( 
         <>
-            <form onSubmit={handleSubmit} className='Signup'>
-            <div className="">
-                <h1 className="">Signup</h1>
-                <input onChange={(e)=>setName(e.target.value)} type="text" name="name" placeholder="Enter user full name" className="bg-[#9ACBD0] p-2 my-2 w-full font-medium text-gray-900 rounded-lg text-center shadow-lg border-purple-200 "/>
-                <input onChange={(e)=>setEmail(e.target.value)} type="email" name="userEmail" placeholder="Enter email" className="bg-[#9ACBD0] p-2 my-2 w-full font-medium text-gray-900 rounded-lg text-center shadow-lg border-purple-200 "/>
-                <input onChange={(e)=>setPassword(e.target.value)} type="password" name="password" placeholder="Enter password" className="bg-[#9ACBD0] p-2 my-2 w-full font-medium text-gray-900 rounded-lg text-center shadow-lg border-purple-800"/>
-                <select class="">
-                    <option value="">select role</option>
-                    <option value="user">user</option>
-                    <option value="admin">admin</option>
-                </select>
-                <button type="submit" className="">Signup</button>
-            </div>
+            <form onSubmit={handleSubmit} className="signup-form">
+                <div className="signup-container">
+                    <h1 className="signup-title">Signup</h1>
+
+                    <input
+                    onChange={(e) => setName(e.target.value)}
+                    type="text"
+                    name="name"
+                    placeholder="Enter full name"
+                    className="signup-input"
+                    />
+
+                    <input
+                    onChange={(e) => setEmail(e.target.value)}
+                    type="email"
+                    name="userEmail"
+                    placeholder="Enter email"
+                    className="signup-input"
+                    />
+
+                    <input
+                    onChange={(e) => setPassword(e.target.value)}
+                    type="password"
+                    name="password"
+                    placeholder="Enter password"
+                    className="signup-input"
+                    />
+
+                    <select className="signup-select">
+                    <option value="">Select role</option>
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                    </select>
+
+                    <button type="submit" className="signup-button">Signup</button>
+                </div>
             </form>
+
         </>
      );
 }

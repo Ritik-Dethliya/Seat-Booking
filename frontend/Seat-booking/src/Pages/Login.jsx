@@ -33,15 +33,32 @@ function Login() {
     }
     return ( 
         <>
-            <form onSubmit={handleSubmit} className="loginform">
-                <h1 className="">Login</h1>
-                <input onChange={(e)=>setEmail(e.target.value)} type="email" name="userEmail" placeholder="Enter email" className="bg-[#9ACBD0] p-2 my-2 w-full font-medium text-gray-900 rounded-lg text-center shadow-lg border-purple-200 "/>
-                <input onChange={(e)=>setPassword(e.target.value)} type="text" name="password" placeholder="Enter password" className="bg-[#9ACBD0] p-2 my-2 w-full font-medium text-gray-900 rounded-lg text-center shadow-lg border-purple-800"/>
-                
-                <button type="submit" className="">Login</button>
-                <h4 onClick={()=>navigate('/signup')}>New User</h4>
+            <form onSubmit={handleSubmit} className="login-form">
+                <h1 className="login-title">Login</h1>
+
+                <input
+                    onChange={(e) => setEmail(e.target.value)}
+                    type="email"
+                    name="userEmail"
+                    placeholder="Enter email"
+                    className="login-input"
+                />
+
+                <input
+                    onChange={(e) => setPassword(e.target.value)}
+                    type="password"
+                    name="password"
+                    placeholder="Enter password"
+                    className="login-input"
+                />
+
+                <button type="submit" className="login-button">Login</button>
+
+                <h4 onClick={() => navigate('/signup')} className="login-link">
+                    New user? Create an account
+                </h4>
             </form>
-            
+
             
         </>
      );

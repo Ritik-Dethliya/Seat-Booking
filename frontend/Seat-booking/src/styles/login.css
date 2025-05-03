@@ -1,55 +1,69 @@
-.loginform {
-    width: 300px;
-    margin: 50px auto;
-    padding: 20px;
-    padding-right: 30px;
-    background-color: #e6f2f3;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(128, 0, 128, 0.2);
-    text-align: center;
-  }
-  
-  .loginform h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-  }
-  
-  h4{
-    text-align: center;
-    cursor: pointer;
-  }
-  .loginform input {
-    background-color: #9ACBD0;
-    padding: 10px;
-    margin: 10px 0;
-    width: 100%;
-    font-weight: 500;
-    color: #333;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 2px 2px 5px rgba(128, 0, 128, 0.2);
-    outline: none;
-  }
-  
-  .loginform input:focus {
-    border-color: #800080;
-  }
-  
-  .loginform button {
-    padding: 10px 20px;
-    background-color: #800080;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-  }
-  
-  .loginform button:hover {
-    background-color: #5e005e;
-  }
-  
+/* login.css */
+
+/* Container for the login form */
+.login-form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title style */
+.login-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #6a4c93;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #f0f4f8;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #6a4c93;
+  box-shadow: 0 0 5px rgba(106, 76, 147, 0.5);
+}
+
+/* Submit button */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6a4c93;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #5b3d80;
+}
+
+
+.login-link {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6a4c93;
+  cursor: pointer;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
