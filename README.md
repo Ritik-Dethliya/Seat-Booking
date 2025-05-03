@@ -51,6 +51,16 @@ This app allows users to book multiple seats that are close to each other. It's 
 
 ## 🚀 Installation
 
+### Folder Structure
+├── backend/
+|   ├──# modules
+|   ├──#routers
+|   ├──#db.config.js
+|   ├──#package.json
+├──frontend
+|   ├──#public
+|   ├──#src
+
 ### Prerequisites
 
 - Node.js & npm
