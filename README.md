@@ -67,7 +67,7 @@ This app allows users to book multiple seats that are close to each other. It's 
 │ └── App.jsx # Main React app file
 │
 └── README.md # Project documentation
-
+```
 ### Prerequisites
 
 - Node.js & npm
